@@ -277,8 +277,6 @@ document.getElementById('asd').innerHTML=song
     var log = document.getElementById('log');
     var btn = document.getElementById('btn');
     function report(s) { return function() { log.innerHTML = s; }; }
-//    JZZ.synth.Tiny.register('Web Audio');
-//    var out = JZZ().or(report('Cannot start MIDI engine!')).openMidiOut().or(report('Cannot open MIDI Out!'));
     var player;
     var playing = false;
     function clear() {
@@ -320,13 +318,13 @@ document.getElementById('asd').innerHTML=song
     }
 
 
-// search script using Babel BITDB
+    // search script using Babel BITDB
     var username = 'Eric'
      var query = {
        "v": 3,
        "q": {
          "find": {
-            "$text": { "$search": "tetrissvscorex2x" }
+            "$text": { "$search": "tetrissvscorex3x" }
          }
        },
        "r": {
@@ -364,7 +362,7 @@ document.getElementById('asd').innerHTML=song
        })
      })
 
-//  pay with money button script
+     //  pay with money button script
 
      function myfunction(){
        username = document.getElementById('input_id2').value;
@@ -382,7 +380,7 @@ document.getElementById('asd').innerHTML=song
        buttonId: "1553260846333",
        buttonData: "{}",
        type: "tip",
-       opReturn: 'tetrissvscorex2x '+ username+ ": "+variable,
+       opReturn: 'tetrissvscorex3x '+ username+ ": "+variable,
        onPayment: function (arg) { console.log('onPayment', arg) },
        onError: function (arg) { console.log('onError', arg) }
      })
